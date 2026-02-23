@@ -8,7 +8,10 @@ const people = [
 // Risultato: 'Paolo', 'Giulia', 'Marco'
 
 people.forEach(person => {
+  //primo metodo con dot notation
   console.log(person.name);
+  //secondo metodo
+  console.log(person["name"])
 });
 
 /*
