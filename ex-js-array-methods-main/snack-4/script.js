@@ -10,6 +10,7 @@ const posts = [
 
 const newArrey=[]
 posts.forEach( filantrop => {
+  //with dot notation
   newArrey.push(filantrop.author);
 });
 console.log(newArrey);
@@ -18,3 +19,8 @@ console.log(newArrey);
 qui abbiamo soltanto aggiunto il metodo .push e creato 
 un nuovo arrey vuoto dove inserire i nomi degli autori
 */
+
+const authors=posts.map((post)=>{
+  return post.author
+})
+console.log(authors);
