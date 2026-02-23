@@ -5,3 +5,19 @@ const numbers = [2, 8, 4, 7, 2, 87];
 
 const plusNumber = numbers.map(num => num  + 1)
 console.log(plusNumber);
+
+//metodo con il for each
+const numbs=[]
+numbers.forEach((numb)=>{
+    numbs.push(++numb)
+})
+console.log(numbs);
+
+//metodo con il for 
+const newNumbs=[]
+
+for (let i = 0; i < numbers.length; i++) {
+    let numb = numbers[i];
+    newNumbs.push(++numb)//numb=numb+1
+}
+console.log(newNumbs);
